@@ -1,0 +1,5 @@
+﻿分类和回归的代码差别：
+1、反向传播中的损失函数：分类是交叉熵，回归是均方误差
+2、训练中：分类是sess.run(accuracy) 。 回归是sess.run(mse)
+3、预测中：分类是sess.run(accuracy)，并且标签反转 le.inverse_transform()。回归是sess.run(mse)
+
